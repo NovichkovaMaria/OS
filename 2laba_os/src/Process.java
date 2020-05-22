@@ -12,10 +12,10 @@ public class Process {
     private int currentTime;
     private int threadMaxTime;
 
-    public Process(String id, int maxTime, int priority)
+    public Process(String id, int maxTime)
     {	
     	this.currentTime = 0;
-        this.id = "Process " + id + " priority: " + priority;
+        this.id = "Process " + id;
 
         Threads = new ArrayList<Thread>();
         int threadsNum = rand.nextInt(4) + 1;

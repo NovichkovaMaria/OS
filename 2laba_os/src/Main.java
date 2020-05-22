@@ -16,8 +16,8 @@ public class Main {
       {
           for (int i = 0; i < rand.nextInt(5) + 1; i++)
           {
-        	  int priority = 1 + (int) (Math.random() * 3);
-        	  Processes.add(new Process("" + i, quant * priority, priority));
+
+        	  Processes.add(new Process("" + i, quant));
           }
       }
       
